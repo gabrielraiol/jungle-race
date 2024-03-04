@@ -7,10 +7,10 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
       "src/*": [
-        "src/*"
+        "./src/*"
       ]
     },
     "module": "ESNext",

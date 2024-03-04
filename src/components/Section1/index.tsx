@@ -1,10 +1,11 @@
-import Logo from "../../assets/logo1.svg";
-import Kart from "../../assets/img1.svg"
-import sLogo from "../../assets/logo2.svg";
+import Logo from "src/assets/logo1.svg";
+import Kart from "src/assets/img1.svg"
+import sLogo from "src/assets/logo2.svg";
+import styles from "./Section1.module.scss";
 
 export default function Section1() {
     return (
-        <section>
+        <section className={styles.body}>
             <header>
                 <img src={sLogo}></img>
                 <div>
