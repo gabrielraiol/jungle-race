@@ -6,7 +6,7 @@
     justify-content: space-between;
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     margin: 1rem 9rem 0 9rem;
     padding: 0.8rem 3rem 0.8rem 3rem;
     position: absolute;
@@ -33,19 +33,22 @@
         display: flex;
         gap: 1rem;
 
-        a {
-            border-width: 2px;
-            border-style: solid;
-            border-radius: 0.5rem;
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: $white;
-            text-decoration: none;
-            padding: 0.8rem 3rem 0.8rem 3rem;
+        .container {
 
-            &.fullfill {
-                border: none;
-                background: linear-gradient(to bottom, $babygrenn, $darkgrenn);
+            a {
+                border: 2px solid $darkgrenn;
+                border-radius: 0.5rem;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: $white;
+                text-decoration: none;
+                padding: 0.8rem 3rem 0.8rem 3rem;
+                box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+
+                &.fullfill {
+                    border: none;
+                    background: linear-gradient(to bottom, $babygrenn, $darkgrenn);
+                }
             }
         }
     }
