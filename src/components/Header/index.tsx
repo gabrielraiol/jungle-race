@@ -12,8 +12,12 @@ export default function Header() {
                 <a href="#">Pitchdeck</a>
             </div>
             <div className={styles.buttons}>
-                <a href="#">Watch trailer!</a>
-                <a href="#">Mint your kart!</a>
+                <div className={styles.container}>
+                    <a href="#">Watch trailer!</a>
+                </div>
+                <div className={styles.container}>
+                    <a className={styles.fullfill} href="#">Mint your kart!</a>
+                </div>
             </div>
         </header>
     )

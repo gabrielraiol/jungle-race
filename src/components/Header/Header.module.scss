@@ -7,10 +7,46 @@
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 1.5rem;
-    margin: 1rem 8rem 0 8rem;
+    margin: 1rem 9rem 0 9rem;
     padding: 0.8rem 3rem 0.8rem 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
 
     img {
         width: 8rem;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 2.5rem;
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: $white;
+            text-decoration: none;
+            padding: 0.8rem 3rem 0.8rem 3rem;
+
+            &.fullfill {
+                border: none;
+                background: linear-gradient(to bottom, $babygrenn, $darkgrenn);
+            }
+        }
     }
 }
