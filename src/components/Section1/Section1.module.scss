@@ -4,12 +4,14 @@
     background-image: url('../../assets/cover1.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    max-width: 100dvw;
 
     .main {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        min-height: 100dvh;
 
         .firstContainer {
             display: flex;
@@ -52,7 +54,13 @@
         }
 
         .secondContainer {
-            width: 50%;
+            width: 80%;
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
     }
 }
