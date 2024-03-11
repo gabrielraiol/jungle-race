@@ -1,5 +1,5 @@
 import Logo from "src/assets/logo1.svg";
-import Kart from "src/assets/img1.svg"
+import Kart from "src/assets/imgSec1.png"
 import styles from "./Section1.module.scss";
 import Header from "../Header";
 
