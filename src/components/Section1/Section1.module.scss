@@ -1,70 +1,72 @@
 @import "../styles/variables";
 
-.sec1 {
-    background-image: url('../../assets/cover1.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    max-width: 100dvw;
+.layer {
+    background: black;
 
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100dvh;
-        background-image: url('../../assets/background1.svg');
+    .sec1 {
+        background-image: url('../../assets/background.svg');
         background-size: cover;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+        max-width: 100dvw;
 
-        .firstContainer {
+        .main {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            min-height: 100dvh;
 
-            h2 {
-                margin-top: 3rem;
-                font-size: 1.25rem;
-                color: $white;
-                font-weight: 500;
-                margin-bottom: 1rem;
-                padding: 0 10rem 0 15rem;
-            }
-
-            .buttonsContainer {
+            .firstContainer {
                 display: flex;
-                gap: 0.5rem;
-                padding: 0 10rem 0 15rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
 
-                a {
-                    border: 2px solid $darkgrenn;
-                    text-align: center;
-                    border-radius: 0.5rem;
-                    font-size: 1.125rem;
-                    font-weight: 600;
+                h2 {
+                    margin-top: 3rem;
+                    font-size: 1.25rem;
                     color: $white;
-                    text-decoration: none;
-                    padding: 0.8rem 0 0.8rem 0;
-                    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-                    width: 18rem;
+                    font-weight: 500;
+                    margin-bottom: 1rem;
+                    padding: 0 10rem 0 15rem;
+                }
 
-                    &.fullfill {
-                        border: none;
-                        background: linear-gradient(to bottom, $babygrenn, $darkgrenn);
+                .buttonsContainer {
+                    display: flex;
+                    gap: 0.5rem;
+                    padding: 0 10rem 0 15rem;
+
+                    a {
+                        border: 2px solid $darkgrenn;
+                        text-align: center;
+                        border-radius: 0.5rem;
+                        font-size: 1.125rem;
+                        font-weight: 600;
+                        color: $white;
+                        text-decoration: none;
+                        padding: 0.8rem 0 0.8rem 0;
+                        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+                        width: 18rem;
+
+                        &.fullfill {
+                            border: none;
+                            background: linear-gradient(to bottom, $babygrenn, $darkgrenn);
+                        }
                     }
                 }
             }
-        }
 
-        .secondContainer {
-            width: 80%;
-            height: 100%;
+            .secondContainer {
+                width: 80%;
+                height: 100%;
 
-            img {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                height: 80%;
-                width: auto;
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 80%;
+                    width: auto;
+                }
             }
         }
     }

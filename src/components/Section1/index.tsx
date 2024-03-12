@@ -5,7 +5,8 @@ import Header from "../Header";
 
 export default function Section1() {
     return (
-        <section className={styles.sec1}>
+        <div className={styles.layer}>
+            <section className={styles.sec1}>
             < Header />
             <div className={styles.main}>
                 <div className={styles.firstContainer}>
@@ -21,5 +22,7 @@ export default function Section1() {
                 </div>
             </div>
         </section>
+        </div>
+        
     )
 }
