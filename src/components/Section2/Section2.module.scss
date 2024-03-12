@@ -3,22 +3,29 @@
 .sec2 {
     background-color: $navyblue;
     min-height: 100dvh;
+    position: relative;
+    overflow-x: hidden;
 
     .layer1 {
         position: absolute;
-
-        img {
-            margin-top: -25rem;
-            width: 100%;
-        }
+        top: 0;
+        left: 0;
+        width: 27rem;
+        height: 27rem;
+        background: radial-gradient(circle, rgb(255, 246, 139, 0.8) 20%, transparent 80%);
+        filter: blur(12rem);
+        transform: translateX(-50%);
     }
 
     .layer2 {
-        position: fixed;
-
-        img {
-            width: 70%;
-        }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 27rem;
+        height: 27rem;
+        background: radial-gradient(circle, rgb(111, 226, 209, 0.8) 20%, transparent 80%);
+        filter: blur(8rem);
+        transform: translateX(50%);
     }
 
     .main {
