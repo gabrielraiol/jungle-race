@@ -104,6 +104,12 @@
         display: none;
     }
 
+    .layer2 {
+        right: unset !important;
+        left: 0;
+        transform: translateX(-50%) !important;
+    }
+
     .main {
         flex-direction: column-reverse;
         height: auto !important;
