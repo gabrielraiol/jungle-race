@@ -14,8 +14,7 @@
     }
 
     .layer2 {
-        display: none;
-        position: absolute;
+        position: fixed;
 
         img {
             width: 70%;
@@ -115,6 +114,7 @@
 
             .buttonsContainer {
                 flex-direction: column;
+                align-items: center;
 
                 a {
                     padding: 0.5rem 0 0.5rem 0 !important;
