@@ -13,7 +13,7 @@ export default function Section1() {
                     <img src={Logo}></img>
                     <h2>Race with your kart in the jungle, battle other drivers and earn as you play!</h2>
                     <div className={styles.buttonsContainer}>
-                        <a className={styles.fullfill} href="#">START ▸</a>
+                        <a href="#" className={styles.fullfill}>START ▸</a>
                         <a href="#">Mint your kart!</a>
                     </div>
                 </div>

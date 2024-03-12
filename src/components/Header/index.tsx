@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 
 export default function Header() {
     return (
-        <header className={styles.header}>
+        <header className={styles.headerDesktop}>
             <img src={sLogo}></img>
             <div className={styles.navigation}>
                 <a href="#">NFTs</a>

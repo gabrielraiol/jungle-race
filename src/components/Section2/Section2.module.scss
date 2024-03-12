@@ -91,3 +91,44 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+
+    .layer1 {
+        display: none;
+    }
+
+    .main {
+        flex-direction: column-reverse;
+        height: auto !important;
+
+        .content {
+            padding: 3rem 3rem 0 3rem !important;
+
+            h3 {
+                font-size: 1.2rem !important;
+            }
+
+            h2 {
+                font-size: 2.3rem !important;
+            }
+
+            .buttonsContainer {
+                flex-direction: column;
+
+                a {
+                    padding: 0.5rem 0 0.5rem 0 !important;
+                }
+            }
+        }
+
+        .imgContainer {
+            width: 100% !important;
+            padding-top: 0 !important;
+
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+}
