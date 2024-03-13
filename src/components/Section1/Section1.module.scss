@@ -134,3 +134,15 @@
         }
     }
 }
+
+@media (max-width: 375px) {
+    .main {
+        min-height: 120dvh !important;
+    }
+
+    .secondContainer {
+        img {
+            bottom: -160px !important;
+        }
+    }
+}
