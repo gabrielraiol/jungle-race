@@ -15,6 +15,11 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-top: 5.5rem;
+
+            img {
+                width: 43rem;
+            }
 
             h2 {
                 margin-top: 3rem;
@@ -58,14 +63,37 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                height: 80%;
-                width: auto;
+                height: auto;
+                width: 73rem;
             }
         }
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
+
+    .firstContainer {
+        img {
+            width: 30rem !important;
+        }
+
+        h2 {
+            padding: 0 8rem 0 8rem !important;
+        }
+
+        .buttonsContainer {
+            padding: 0 8rem 0 8rem !important;
+        }
+    }
+
+    .secondContainer {
+        img {
+            width: 48rem !important;
+        }
+    }
+}
+
+@media (max-width: 900px) {
 
     .sec1 {
         background-image: url('../../assets/background_mobile.svg');
@@ -77,7 +105,7 @@
 
         .firstContainer {
             img {
-                width: 21rem;
+                width: 21rem !important;
             }
 
             h2 {
