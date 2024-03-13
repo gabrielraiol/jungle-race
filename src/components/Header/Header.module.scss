@@ -1,6 +1,6 @@
 @import "../styles/variables";
 
-.headerDesktop {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -54,8 +54,92 @@
     }
 }
 
+.headerMobile {
+    display: none;
+}
+
 @media (max-width: 1200px) {
-    .headerDesktop {
-        display: none;
+
+    .header {
+        margin: 1rem 0.8rem 0 0.8rem;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+
+        .headerMobile {
+            display: block;
+
+            .burger {
+                -webkit-tap-highlight-color: transparent;
+                background: none;
+                border: none;
+                cursor: pointer;
+                padding: 1.2rem 1rem;
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                z-index: 1;
+
+                &.active {
+                    #bar1 {
+                        transform: rotate(-45deg) translate(-5px, 5px);
+                    }
+
+                    #bar2 {
+                        opacity: 0;
+                    }
+
+                    #bar3 {
+                        transform: rotate(45deg) translate(-5px, -5px);
+                    }
+                }
+
+                .bar {
+                    background-color: $grey2;
+                    display: block;
+                    border-radius: 8px;
+                    height: 5px;
+                    margin: 4px auto;
+                    width: 28px;
+                    transition: 0.5s;
+                }
+            }
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                height: 15rem;
+                justify-content: space-around;
+                background-color: rgba(0, 0, 0, 0.25);
+                position: absolute;
+                top: 74.5px;
+                right: 0px;
+                width: 60%;
+                text-decoration: none;
+                text-align: left;
+                transform: translateX(-100%);
+                opacity: 0;
+                transition: all 0.5s ease;
+
+                &.show {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        .navigation {
+            display: none !important;
+        }
+
+        .buttons {
+            display: none !important;
+        }
     }
 }
