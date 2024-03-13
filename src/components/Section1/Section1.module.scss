@@ -67,6 +67,10 @@
 
 @media (max-width: 1200px) {
 
+    .sec1 {
+        background-image: url('../../assets/background_mobile.svg');
+    }
+
     .main {
         flex-direction: column;
         justify-content: initial !important;
