@@ -3,22 +3,22 @@
 .sec1 {
     background-image: url('../../assets/background.svg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     .main {
         display: flex;
         justify-content: center;
-        min-height: 100dvh;
+        min-height: 100vh;
 
         .firstContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 5.5rem;
+            width: 50%;
 
             img {
-                width: 43rem;
+                width: 67%;
             }
 
             h2 {
@@ -26,14 +26,14 @@
                 font-size: 1.25rem;
                 color: $white;
                 font-weight: 500;
-                margin-bottom: 1rem;
-                padding: 0 10rem 0 15rem;
+                margin-bottom: 1.5rem;
+                width: 67%;
             }
 
             .buttonsContainer {
                 display: flex;
                 gap: 0.5rem;
-                padding: 0 10rem 0 15rem;
+                width: 67%;
 
                 a {
                     border: 2px solid $darkgrenn;
@@ -56,44 +56,21 @@
         }
 
         .secondContainer {
-            width: 80%;
+            width: 50%;
             height: 100%;
+            display: flex;
+            justify-content: end;
+            align-self: flex-end;
 
             img {
-                position: absolute;
-                bottom: 0;
-                right: 0;
                 height: auto;
-                width: 73rem;
+                width: 100%;
             }
         }
     }
 }
 
-@media (max-width: 1366px) {
-
-    .firstContainer {
-        img {
-            width: 30rem !important;
-        }
-
-        h2 {
-            padding: 0 8rem 0 8rem !important;
-        }
-
-        .buttonsContainer {
-            padding: 0 8rem 0 8rem !important;
-        }
-    }
-
-    .secondContainer {
-        img {
-            width: 48rem !important;
-        }
-    }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     .sec1 {
         background-image: url('../../assets/background_mobile.svg');
@@ -101,48 +78,46 @@
 
     .main {
         flex-direction: column;
-        justify-content: initial !important;
+        justify-content: space-between !important;
+        min-height: 100dvh !important;
 
         .firstContainer {
+
+            margin-top: 7rem;
+            margin-bottom: 1.5rem;
+            width: 100% !important;
+
             img {
-                width: 21rem !important;
+                width: 70% !important;
             }
 
             h2 {
+                width: 80% !important;
                 margin: 1rem 0 1.5rem 0 !important;
-                padding: 0 3rem 0 3rem !important;
                 text-align: center;
+                font-size: 1.125rem !important;
             }
 
             .buttonsContainer {
                 flex-direction: column;
-                padding: 0 !important;
+                width: 80% !important;
 
                 a {
                     padding: 0.5rem 0 0.5rem 0 !important;
+                    width: 100% !important;
                 }
             }
         }
 
         .secondContainer {
             width: 100% !important;
+            position: relative;
+            bottom: 0;
 
             img {
-                height: auto !important;
+                position: unset !important;
                 width: 110dvw !important;
             }
-        }
-    }
-}
-
-@media (max-width: 375px) and (max-height: 667px) {
-    .main {
-        min-height: 120dvh !important;
-    }
-
-    .secondContainer {
-        img {
-            bottom: -160px !important;
         }
     }
 }
