@@ -14,34 +14,10 @@ export default function Section3() {
             </h2>
 
             <div className={styles.swiperContainer}>
-                <Swiper
-                    slidesPerView={3}
-                    centeredSlides
-                    loop
-                    autoplay={{ delay: 2500 }}
-                    spaceBetween={10}
-                    pagination={{ clickable: true }}
-                    navigation={{
-                        prevEl: '.swiper-button-prev',
-                        nextEl: '.swiper-button-next',
-                    }}
-                    breakpoints={{
-                        1200: {
-                            slidesPerView: 1,
-                            spaceBetween: 100,
-                        },
-                    }}
-                    effect="coverflow"
-                    coverflowEffect={{
-                        rotate: 30,
-                        slideShadows: false,
-                    }}
-                >
-
+                <Swiper>
                     <SwiperSlide><img src={Slide1} alt="Slide 1" /></SwiperSlide>
                     <SwiperSlide><img src={Slide2} alt="Slide 2" /></SwiperSlide>
                     <SwiperSlide><img src={Slide3} alt="Slide 3" /></SwiperSlide>
-
                 </Swiper>
 
                 <div className="swiper-button-prev"></div>
