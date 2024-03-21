@@ -20,7 +20,10 @@ export default function Section3() {
             <div className={styles.swiperContainer}>
                 <Swiper
                     autoplay={{ delay: 2500 }}
+                    loop
                     slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    navigation
                     breakpoints={{
                         1200: {
                           slidesPerView: 3,
